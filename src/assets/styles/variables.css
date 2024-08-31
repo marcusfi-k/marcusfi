@@ -1,0 +1,18 @@
+:root {
+  --primary-color: linear-gradient(to right, #6a11cb, #2575fc);
+  --secondary-color: linear-gradient(to right, #5510aa, #1e4eca);
+  --color: #000;
+  --ct-color: #fff;
+  --gray-color: #f0f0f0;
+  --danger-color: #f14668;
+  --link-color: #007bff;
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+  --modal-overlay-bg: rgba(0, 0, 0, 0.5);
+  --sidebar-offset: 50px;
+  --admin-bar: 0px;
+  --theme-frame-size: 0px;
+  --header-sticky-height: 0px;
+  --sticky-shrink: 100;
+  --header-height: 60px;
+  --layout-sidebar-width: 96px;
+}

@@ -1,43 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    <meta name="description" content="Web site created using create-react-app" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-dark.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.0/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- JS Libraries: React, ReactDOM, Redux, React-Redux, Babel, Recharts, Axios, Bootstrap, etc. -->
+    <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/redux@5.0.1/dist/redux.min.js"></script>
+    <script src="https://unpkg.com/react-redux@9.1.2/dist/react-redux.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/recharts/umd/Recharts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.7.2/dist/axios.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.5.1/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@3.6.0/dist/date-fns.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/formik@2.4.6/dist/formik.umd.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/framer-motion@11.2.13/dist/framer-motion.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@4.0.0/build/jwt-decode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+    <script src="https://cdn.quilljs.com/2.0.2/quill.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-bootstrap@2.10.4/dist/react-bootstrap.min.js"></script>
+    <script src="https://unpkg.com/react-helmet@6.1.0/umd/react-helmet.min.js"></script>
+    <script src="https://unpkg.com/react-i18next@14.1.2/dist/umd/react-i18next.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-modal@3.16.1/dist/react-modal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-query@3.39.3/dist/react-query.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-quill@2.0.0/dist/react-quill.min.js"></script>
+    <script src="https://unpkg.com/react-router-dom@6.24.1/umd/react-router-dom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-toastify@10.0.5/dist/react-toastify.min.js"></script>
+    <script src="https://unpkg.com/recoil@0.7.7/umd/recoil.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/redux-thunk@3.1.0/dist/redux-thunk.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/yup@1.4.0/dist/yup.min.js"></script>
+
+    <!-- Add font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <title>Marcusfi</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <!-- Your JavaScript file -->
+    <script type="text/babel" src="%PUBLIC_URL%/pages/ToolsPage.js"></script>
   </body>
 </html>

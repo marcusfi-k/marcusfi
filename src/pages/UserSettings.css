@@ -1,0 +1,168 @@
+.user-settings__content-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.user-settings__settings-page {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.user-settings__settings-content {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.user-settings__title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.user-settings__description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.user-settings__info-section {
+  margin-bottom: 20px;
+}
+
+.user-settings__section-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.user-settings__section-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.user-settings__info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.user-settings__label {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.user-settings__value {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.user-settings__delete-account-section {
+  margin-top: 20px;
+}
+
+.user-settings__delete-account-button {
+  width: 50%;
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 20px auto;
+  display: block;
+}
+
+.user-settings__delete-account-button:hover {
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+.user-settings__modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  max-width: 400px;
+  width: 90%;
+  margin: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.user-settings__overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.user-settings__modal-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.user-settings__modal-subtitle {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.user-settings__modal-content {
+  margin-bottom: 20px;
+}
+
+.user-settings__modal-label {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.user-settings__modal-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.user-settings__modal-save-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: linear-gradient(to right, #00aaff, #00ffaa);
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.user-settings__modal-save-button:hover {
+  background: linear-gradient(to right, #0088cc, #00cc88);
+}
+
+.user-settings__modal-close-button-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.user-settings__close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #aaa;
+  cursor: pointer;
+}

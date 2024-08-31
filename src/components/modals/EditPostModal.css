@@ -1,0 +1,232 @@
+.edit-post-modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.edit-post-modal__content {
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-post-modal__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.edit-post-modal__title {
+  margin: 0;
+}
+
+.edit-post-modal__close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+}
+
+.edit-post-modal__body {
+  display: flex;
+  padding: 15px;
+  gap: 15px;
+  flex-direction: row;
+
+  @media (min-width: 768px) {
+    gap: 20px;
+  }
+}
+
+.edit-post-modal__left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit-post-modal__right-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.edit-post-modal__label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.edit-post-modal__image-upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  height: 75%;
+  width: 100%;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.edit-post-modal__image-upload-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.edit-post-modal__image-upload-input {
+  display: none;
+}
+
+.edit-post-modal__image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.edit-post-modal__image-placeholder {
+  font-size: 24px;
+  color: #ccc;
+}
+
+.edit-post-modal__title-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-post-modal__title-input {
+  width: 100%;
+  padding: 8px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.edit-post-modal__type-category-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-post-modal__select-container {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-post-modal__type-select,
+.edit-post-modal__category-select {
+  flex: 1;
+  padding: 8px;
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.edit-post-modal__content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 15px;
+}
+
+.edit-post-modal__quill-container,
+.edit-post-modal__media-url-container {
+  width: 100%;
+}
+
+.edit-post-modal__quill-container {
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  max-width: 100%; /* Đảm bảo không vượt quá modal */
+  overflow: hidden;
+}
+
+#toolbar-container {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+#editor {
+  height: 300px;
+  width: 100%; /* Đảm bảo chiều rộng của editor */
+  max-width: 100%; /* Đảm bảo không vượt quá modal */
+  box-sizing: border-box;
+}
+
+.edit-post-modal__media-url-input {
+  padding: 8px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.edit-post-modal__media-preview {
+  margin-top: 10px;
+}
+
+.edit-post-modal__media-iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+.edit-post-modal__footer {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}
+
+.edit-post-modal__save-button {
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-post-modal__save-button.active {
+  background-color: #007bff;
+}
+
+.edit-post-modal__save-button.active:hover {
+  background-color: #0056b3;
+}
+
+.edit-post-modal__save-button.inactive {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.edit-post-modal__save-button.inactive:hover {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

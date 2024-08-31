@@ -1,0 +1,41 @@
+/* src/pages/MotivationPage.css */
+.motivation-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.motivation-page__content {
+  text-align: center;
+}
+
+.motivation-page__title {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #461db8;
+}
+
+.motivation-page__description {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #555;
+}
+
+.motivation-page__loader {
+  margin: 0 auto 20px auto;
+  border: 8px solid #f0f4f8;
+  border-top: 8px solid #461db8;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: motivation-page__spin 1s linear infinite;
+}
+
+@keyframes motivation-page__spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

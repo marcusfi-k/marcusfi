@@ -1,0 +1,208 @@
+@import "../../assets/styles/variables";
+
+.register-modal {
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  &__content {
+    background: #fff;
+    padding: 20px 0;
+    border-radius: 16px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #000;
+    box-sizing: border-box;
+  }
+
+  &__close-button-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  &__close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+  }
+
+  &__title-container {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &__auth-input-container {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 10px auto;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+  }
+
+  &__input-icon-container {
+    position: absolute;
+    left: 10px;
+  }
+
+  &__input-icon {
+    font-size: 16px;
+    color: #888;
+  }
+
+  &__auth-input {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    border: none;
+    outline: none;
+    background: none;
+    flex: 1;
+  }
+
+  &__password-toggle-icon-container {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  &__password-toggle-icon {
+    color: #888;
+  }
+
+  &__auth-button {
+    width: 60%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 14px;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    &--primary {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      border: none;
+
+      &:hover {
+        background: linear-gradient(to right, #5510aa, #1e4eca);
+      }
+    }
+
+    &--google,
+    &--facebook {
+      display: flex;
+      width: 50%;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      font-size: 12px;
+      color: white;
+
+      &:hover {
+        filter: brightness(0.9);
+      }
+    }
+
+    &--google {
+      background-color: #db4437;
+
+      &:hover {
+        background-color: #c33c2f;
+      }
+    }
+
+    &--facebook {
+      background-color: #3b5998;
+
+      &:hover {
+        background-color: #324a86;
+      }
+    }
+  }
+
+  &__forgot-password-container {
+    text-align: right;
+    width: 80%;
+    margin: 0 auto 10px auto;
+  }
+
+  &__forgot-password-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__separator-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  &__separator {
+    width: 30%;
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+
+  &__toggle-form-text {
+    font-size: 12px;
+  }
+
+  &__toggle-form-link {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__error-message {
+    color: red;
+    font-size: 12px;
+  }
+
+  &__additional-options {
+    margin-top: 10px;
+  }
+
+  &__button-container {
+    margin-top: 10px;
+  }
+}

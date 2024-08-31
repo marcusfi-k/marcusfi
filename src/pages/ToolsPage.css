@@ -1,0 +1,45 @@
+/* src/pages/ToolsPage.css */
+
+.tools-page {
+  padding: 20px;
+}
+
+.tool-section {
+  margin-bottom: 40px;
+}
+
+.tool-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.tool-section form {
+  margin-bottom: 20px;
+}
+
+.tool-section label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.tool-section input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.tool-section button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.tool-section button:hover {
+  background-color: #0056b3;
+}
+
+.tool-section p {
+  font-size: 18px;
+}

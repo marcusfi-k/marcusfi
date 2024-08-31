@@ -1,0 +1,55 @@
+@import 'reset.css';
+@import 'variables.css';
+
+html {
+  scrollbar-width: thin; 
+  scrollbar-color: rgba(188, 182, 182, 0.6) transparent; 
+}
+
+body::-webkit-scrollbar {
+  width: 8px; 
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(198, 198, 198, 0.6); 
+  border-radius: 4px; 
+  background-clip: padding-box; 
+  height: 30px; 
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(85, 85, 85, 0.6); 
+}
+
+.withSidebar{
+  display: flex;
+  min-height: 100vh;
+}
+
+
+.sidebar__container {
+  flex-shrink: 0;
+  padding-top: 5px;
+}
+
+
+.withSidebar__content{
+  width: min(100% - var(--layout-sidebar-width), 2400px);
+  margin: 0 auto;
+  padding: 0 32px 0 10px;
+}
+
+.page-title{
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #242424;
+}
+
+.page-description{
+  margin: 16px 0;
+}
